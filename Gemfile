@@ -2,9 +2,9 @@ ruby '2.4.0'
 
 source 'https://rubygems.org'
 
-gem 'sinatra'
+gem 'capybara'
 gem 'rspec'
+gem 'selenium-webdriver'
 gem 'simplecov'
 gem 'simplecov-console'
-gem 'capybara'
-gem 'selenium-webdriver'
+gem 'sinatra'

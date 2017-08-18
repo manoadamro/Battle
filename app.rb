@@ -24,8 +24,7 @@ class Battle < Sinatra::Base
   end
 
   get '/attack' do
-    $game.attack
-    session[:message] = "#{$game.player1.name} attacked #{$game.player2.name}"
+    session[:message] = $game.attack
     redirect to('/play')
   end
 
