@@ -5,6 +5,6 @@ source 'https://rubygems.org'
 gem 'capybara'
 gem 'rspec'
 gem 'selenium-webdriver'
-gem 'simplecov'
-gem 'simplecov-console'
+gem 'simplecov', require: false, group: :test
+gem 'simplecov-console', require: false, group: :test
 gem 'sinatra'

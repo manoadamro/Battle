@@ -9,8 +9,9 @@ feature 'Attacking' do
 
   scenario 'reduces points' do
     sign_in_and_play
+    points = $game.player2.hp
     click_button('Attack')
-    expect(page).to have_content('100 : 90')
+    expect($game.player2.hp).to be <= points
   end
 
   scenario 'switches turn' do
